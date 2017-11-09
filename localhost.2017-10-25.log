@@ -1,0 +1,638 @@
+oct 25, 2017 6:42:53 PM org.apache.catalina.core.ApplicationContext log
+INFO: QuartzInitializer: Quartz Initializer Servlet loaded, initializing Scheduler...
+oct 25, 2017 6:42:53 PM org.apache.catalina.core.ApplicationContext log
+INFO: QuartzInitializer: Quartz Scheduler failed to initialize: org.quartz.SchedulerConfigException: Failure occured during job recovery. [See nested exception: org.quartz.JobPersistenceException: Failed to obtain DB connection from data source 'quartz': java.sql.SQLException: Could not retrieve datasource via JNDI url 'java:comp/env/jdbc/spagobi' javax.naming.NameNotFoundException: Name [jdbc/spagobi] is not bound in this Context. Unable to find [jdbc]. [See nested exception: java.sql.SQLException: Could not retrieve datasource via JNDI url 'java:comp/env/jdbc/spagobi' javax.naming.NameNotFoundException: Name [jdbc/spagobi] is not bound in this Context. Unable to find [jdbc].]]
+oct 25, 2017 6:42:53 PM org.apache.catalina.core.StandardContext loadOnStartup
+SEVERE: Servlet [QuartzInitializer] in web application [/SpagoBI] threw load() exception
+java.sql.SQLException: Could not retrieve datasource via JNDI url 'java:comp/env/jdbc/spagobi' javax.naming.NameNotFoundException: Name [jdbc/spagobi] is not bound in this Context. Unable to find [jdbc].
+	at org.quartz.utils.JNDIConnectionProvider.getConnection(JNDIConnectionProvider.java:166)
+	at org.quartz.utils.DBConnectionManager.getConnection(DBConnectionManager.java:112)
+	at org.quartz.impl.jdbcjobstore.JobStoreSupport.getConnection(JobStoreSupport.java:662)
+	at org.quartz.impl.jdbcjobstore.JobStoreTX.getNonManagedTXConnection(JobStoreTX.java:72)
+	at org.quartz.impl.jdbcjobstore.JobStoreSupport.executeInNonManagedTXLock(JobStoreSupport.java:3708)
+	at org.quartz.impl.jdbcjobstore.JobStoreSupport.executeInNonManagedTXLock(JobStoreSupport.java:3673)
+	at org.quartz.impl.jdbcjobstore.JobStoreSupport.cleanVolatileTriggerAndJobs(JobStoreSupport.java:722)
+	at org.quartz.impl.jdbcjobstore.JobStoreSupport.initialize(JobStoreSupport.java:580)
+	at org.quartz.impl.jdbcjobstore.JobStoreTX.initialize(JobStoreTX.java:59)
+	at org.quartz.impl.StdSchedulerFactory.instantiate(StdSchedulerFactory.java:1220)
+	at org.quartz.impl.StdSchedulerFactory.getScheduler(StdSchedulerFactory.java:1371)
+	at org.quartz.ee.servlet.QuartzInitializerServlet.init(QuartzInitializerServlet.java:160)
+	at org.apache.catalina.core.StandardWrapper.initServlet(StandardWrapper.java:1269)
+	at org.apache.catalina.core.StandardWrapper.loadServlet(StandardWrapper.java:1182)
+	at org.apache.catalina.core.StandardWrapper.load(StandardWrapper.java:1072)
+	at org.apache.catalina.core.StandardContext.loadOnStartup(StandardContext.java:5362)
+	at org.apache.catalina.core.StandardContext.startInternal(StandardContext.java:5660)
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:145)
+	at org.apache.catalina.core.ContainerBase.addChildInternal(ContainerBase.java:1015)
+	at org.apache.catalina.core.ContainerBase.addChild(ContainerBase.java:991)
+	at org.apache.catalina.core.StandardHost.addChild(StandardHost.java:652)
+	at org.apache.catalina.startup.HostConfig.deployWAR(HostConfig.java:1127)
+	at org.apache.catalina.startup.HostConfig$DeployWar.run(HostConfig.java:2020)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Unknown Source)
+	at java.util.concurrent.FutureTask.run(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.lang.Thread.run(Unknown Source)
+
+oct 25, 2017 6:42:57 PM org.apache.catalina.core.ApplicationContext log
+INFO: ContextListener: contextInitialized()
+oct 25, 2017 6:42:57 PM org.apache.catalina.core.ApplicationContext log
+INFO: SessionListener: contextInitialized()
+oct 25, 2017 6:42:57 PM org.apache.catalina.core.ApplicationContext log
+INFO: ContextListener: attributeAdded('org.apache.jasper.compiler.TldLocationsCache', 'org.apache.jasper.compiler.TldLocationsCache@6b989263')
+oct 25, 2017 6:55:38 PM org.apache.catalina.core.ApplicationContext log
+INFO: QuartzInitializer: Quartz Initializer Servlet loaded, initializing Scheduler...
+oct 25, 2017 6:55:38 PM org.apache.catalina.core.ApplicationContext log
+INFO: QuartzInitializer: Quartz Scheduler failed to initialize: org.quartz.SchedulerConfigException: Failure occured during job recovery. [See nested exception: org.quartz.JobPersistenceException: Failed to obtain DB connection from data source 'quartz': java.sql.SQLException: Could not retrieve datasource via JNDI url 'java:comp/env/jdbc/spagobi' javax.naming.NameNotFoundException: Name [jdbc/spagobi] is not bound in this Context. Unable to find [jdbc]. [See nested exception: java.sql.SQLException: Could not retrieve datasource via JNDI url 'java:comp/env/jdbc/spagobi' javax.naming.NameNotFoundException: Name [jdbc/spagobi] is not bound in this Context. Unable to find [jdbc].]]
+oct 25, 2017 6:55:38 PM org.apache.catalina.core.StandardContext loadOnStartup
+SEVERE: Servlet [QuartzInitializer] in web application [/SpagoBI] threw load() exception
+java.sql.SQLException: Could not retrieve datasource via JNDI url 'java:comp/env/jdbc/spagobi' javax.naming.NameNotFoundException: Name [jdbc/spagobi] is not bound in this Context. Unable to find [jdbc].
+	at org.quartz.utils.JNDIConnectionProvider.getConnection(JNDIConnectionProvider.java:166)
+	at org.quartz.utils.DBConnectionManager.getConnection(DBConnectionManager.java:112)
+	at org.quartz.impl.jdbcjobstore.JobStoreSupport.getConnection(JobStoreSupport.java:662)
+	at org.quartz.impl.jdbcjobstore.JobStoreTX.getNonManagedTXConnection(JobStoreTX.java:72)
+	at org.quartz.impl.jdbcjobstore.JobStoreSupport.executeInNonManagedTXLock(JobStoreSupport.java:3708)
+	at org.quartz.impl.jdbcjobstore.JobStoreSupport.executeInNonManagedTXLock(JobStoreSupport.java:3673)
+	at org.quartz.impl.jdbcjobstore.JobStoreSupport.cleanVolatileTriggerAndJobs(JobStoreSupport.java:722)
+	at org.quartz.impl.jdbcjobstore.JobStoreSupport.initialize(JobStoreSupport.java:580)
+	at org.quartz.impl.jdbcjobstore.JobStoreTX.initialize(JobStoreTX.java:59)
+	at org.quartz.impl.StdSchedulerFactory.instantiate(StdSchedulerFactory.java:1220)
+	at org.quartz.impl.StdSchedulerFactory.getScheduler(StdSchedulerFactory.java:1371)
+	at org.quartz.ee.servlet.QuartzInitializerServlet.init(QuartzInitializerServlet.java:160)
+	at org.apache.catalina.core.StandardWrapper.initServlet(StandardWrapper.java:1269)
+	at org.apache.catalina.core.StandardWrapper.loadServlet(StandardWrapper.java:1182)
+	at org.apache.catalina.core.StandardWrapper.load(StandardWrapper.java:1072)
+	at org.apache.catalina.core.StandardContext.loadOnStartup(StandardContext.java:5362)
+	at org.apache.catalina.core.StandardContext.startInternal(StandardContext.java:5660)
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:145)
+	at org.apache.catalina.core.StandardContext.reload(StandardContext.java:4134)
+	at org.apache.catalina.loader.WebappLoader.backgroundProcess(WebappLoader.java:425)
+	at org.apache.catalina.core.ContainerBase.backgroundProcess(ContainerBase.java:1470)
+	at org.apache.catalina.core.StandardContext.backgroundProcess(StandardContext.java:5960)
+	at org.apache.catalina.core.ContainerBase$ContainerBackgroundProcessor.processChildren(ContainerBase.java:1671)
+	at org.apache.catalina.core.ContainerBase$ContainerBackgroundProcessor.processChildren(ContainerBase.java:1681)
+	at org.apache.catalina.core.ContainerBase$ContainerBackgroundProcessor.processChildren(ContainerBase.java:1681)
+	at org.apache.catalina.core.ContainerBase$ContainerBackgroundProcessor.run(ContainerBase.java:1649)
+	at java.lang.Thread.run(Unknown Source)
+
+oct 25, 2017 6:58:25 PM org.apache.catalina.core.ApplicationContext log
+INFO: QuartzInitializer: Quartz Initializer Servlet loaded, initializing Scheduler...
+oct 25, 2017 6:58:25 PM org.apache.catalina.core.ApplicationContext log
+INFO: QuartzInitializer: Quartz Scheduler failed to initialize: org.quartz.SchedulerConfigException: Failure occured during job recovery. [See nested exception: org.quartz.JobPersistenceException: Failed to obtain DB connection from data source 'quartz': java.sql.SQLException: Could not retrieve datasource via JNDI url 'java:comp/env/jdbc/spagobi' javax.naming.NameNotFoundException: Name [jdbc/spagobi] is not bound in this Context. Unable to find [jdbc]. [See nested exception: java.sql.SQLException: Could not retrieve datasource via JNDI url 'java:comp/env/jdbc/spagobi' javax.naming.NameNotFoundException: Name [jdbc/spagobi] is not bound in this Context. Unable to find [jdbc].]]
+oct 25, 2017 6:58:25 PM org.apache.catalina.core.StandardContext loadOnStartup
+SEVERE: Servlet [QuartzInitializer] in web application [/SpagoBI] threw load() exception
+java.sql.SQLException: Could not retrieve datasource via JNDI url 'java:comp/env/jdbc/spagobi' javax.naming.NameNotFoundException: Name [jdbc/spagobi] is not bound in this Context. Unable to find [jdbc].
+	at org.quartz.utils.JNDIConnectionProvider.getConnection(JNDIConnectionProvider.java:166)
+	at org.quartz.utils.DBConnectionManager.getConnection(DBConnectionManager.java:112)
+	at org.quartz.impl.jdbcjobstore.JobStoreSupport.getConnection(JobStoreSupport.java:662)
+	at org.quartz.impl.jdbcjobstore.JobStoreTX.getNonManagedTXConnection(JobStoreTX.java:72)
+	at org.quartz.impl.jdbcjobstore.JobStoreSupport.executeInNonManagedTXLock(JobStoreSupport.java:3708)
+	at org.quartz.impl.jdbcjobstore.JobStoreSupport.executeInNonManagedTXLock(JobStoreSupport.java:3673)
+	at org.quartz.impl.jdbcjobstore.JobStoreSupport.cleanVolatileTriggerAndJobs(JobStoreSupport.java:722)
+	at org.quartz.impl.jdbcjobstore.JobStoreSupport.initialize(JobStoreSupport.java:580)
+	at org.quartz.impl.jdbcjobstore.JobStoreTX.initialize(JobStoreTX.java:59)
+	at org.quartz.impl.StdSchedulerFactory.instantiate(StdSchedulerFactory.java:1220)
+	at org.quartz.impl.StdSchedulerFactory.getScheduler(StdSchedulerFactory.java:1371)
+	at org.quartz.ee.servlet.QuartzInitializerServlet.init(QuartzInitializerServlet.java:160)
+	at org.apache.catalina.core.StandardWrapper.initServlet(StandardWrapper.java:1269)
+	at org.apache.catalina.core.StandardWrapper.loadServlet(StandardWrapper.java:1182)
+	at org.apache.catalina.core.StandardWrapper.load(StandardWrapper.java:1072)
+	at org.apache.catalina.core.StandardContext.loadOnStartup(StandardContext.java:5362)
+	at org.apache.catalina.core.StandardContext.startInternal(StandardContext.java:5660)
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:145)
+	at org.apache.catalina.core.StandardContext.reload(StandardContext.java:4134)
+	at org.apache.catalina.loader.WebappLoader.backgroundProcess(WebappLoader.java:425)
+	at org.apache.catalina.core.ContainerBase.backgroundProcess(ContainerBase.java:1470)
+	at org.apache.catalina.core.StandardContext.backgroundProcess(StandardContext.java:5960)
+	at org.apache.catalina.core.ContainerBase$ContainerBackgroundProcessor.processChildren(ContainerBase.java:1671)
+	at org.apache.catalina.core.ContainerBase$ContainerBackgroundProcessor.processChildren(ContainerBase.java:1681)
+	at org.apache.catalina.core.ContainerBase$ContainerBackgroundProcessor.processChildren(ContainerBase.java:1681)
+	at org.apache.catalina.core.ContainerBase$ContainerBackgroundProcessor.run(ContainerBase.java:1649)
+	at java.lang.Thread.run(Unknown Source)
+
+oct 25, 2017 7:00:53 PM org.apache.catalina.core.ApplicationContext log
+INFO: QuartzInitializer: Quartz Initializer Servlet loaded, initializing Scheduler...
+oct 25, 2017 7:00:53 PM org.apache.catalina.core.ApplicationContext log
+INFO: QuartzInitializer: Quartz Scheduler failed to initialize: org.quartz.SchedulerConfigException: Failure occured during job recovery. [See nested exception: org.quartz.JobPersistenceException: Failed to obtain DB connection from data source 'quartz': java.sql.SQLException: Could not retrieve datasource via JNDI url 'java:comp/env/jdbc/spagobi' javax.naming.NameNotFoundException: Name [jdbc/spagobi] is not bound in this Context. Unable to find [jdbc]. [See nested exception: java.sql.SQLException: Could not retrieve datasource via JNDI url 'java:comp/env/jdbc/spagobi' javax.naming.NameNotFoundException: Name [jdbc/spagobi] is not bound in this Context. Unable to find [jdbc].]]
+oct 25, 2017 7:00:53 PM org.apache.catalina.core.StandardContext loadOnStartup
+SEVERE: Servlet [QuartzInitializer] in web application [/SpagoBI] threw load() exception
+java.sql.SQLException: Could not retrieve datasource via JNDI url 'java:comp/env/jdbc/spagobi' javax.naming.NameNotFoundException: Name [jdbc/spagobi] is not bound in this Context. Unable to find [jdbc].
+	at org.quartz.utils.JNDIConnectionProvider.getConnection(JNDIConnectionProvider.java:166)
+	at org.quartz.utils.DBConnectionManager.getConnection(DBConnectionManager.java:112)
+	at org.quartz.impl.jdbcjobstore.JobStoreSupport.getConnection(JobStoreSupport.java:662)
+	at org.quartz.impl.jdbcjobstore.JobStoreTX.getNonManagedTXConnection(JobStoreTX.java:72)
+	at org.quartz.impl.jdbcjobstore.JobStoreSupport.executeInNonManagedTXLock(JobStoreSupport.java:3708)
+	at org.quartz.impl.jdbcjobstore.JobStoreSupport.executeInNonManagedTXLock(JobStoreSupport.java:3673)
+	at org.quartz.impl.jdbcjobstore.JobStoreSupport.cleanVolatileTriggerAndJobs(JobStoreSupport.java:722)
+	at org.quartz.impl.jdbcjobstore.JobStoreSupport.initialize(JobStoreSupport.java:580)
+	at org.quartz.impl.jdbcjobstore.JobStoreTX.initialize(JobStoreTX.java:59)
+	at org.quartz.impl.StdSchedulerFactory.instantiate(StdSchedulerFactory.java:1220)
+	at org.quartz.impl.StdSchedulerFactory.getScheduler(StdSchedulerFactory.java:1371)
+	at org.quartz.ee.servlet.QuartzInitializerServlet.init(QuartzInitializerServlet.java:160)
+	at org.apache.catalina.core.StandardWrapper.initServlet(StandardWrapper.java:1269)
+	at org.apache.catalina.core.StandardWrapper.loadServlet(StandardWrapper.java:1182)
+	at org.apache.catalina.core.StandardWrapper.load(StandardWrapper.java:1072)
+	at org.apache.catalina.core.StandardContext.loadOnStartup(StandardContext.java:5362)
+	at org.apache.catalina.core.StandardContext.startInternal(StandardContext.java:5660)
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:145)
+	at org.apache.catalina.core.StandardContext.reload(StandardContext.java:4134)
+	at org.apache.catalina.loader.WebappLoader.backgroundProcess(WebappLoader.java:425)
+	at org.apache.catalina.core.ContainerBase.backgroundProcess(ContainerBase.java:1470)
+	at org.apache.catalina.core.StandardContext.backgroundProcess(StandardContext.java:5960)
+	at org.apache.catalina.core.ContainerBase$ContainerBackgroundProcessor.processChildren(ContainerBase.java:1671)
+	at org.apache.catalina.core.ContainerBase$ContainerBackgroundProcessor.processChildren(ContainerBase.java:1681)
+	at org.apache.catalina.core.ContainerBase$ContainerBackgroundProcessor.processChildren(ContainerBase.java:1681)
+	at org.apache.catalina.core.ContainerBase$ContainerBackgroundProcessor.run(ContainerBase.java:1649)
+	at java.lang.Thread.run(Unknown Source)
+
+oct 25, 2017 7:04:51 PM org.apache.catalina.core.ApplicationContext log
+INFO: QuartzInitializer: Quartz Initializer Servlet loaded, initializing Scheduler...
+oct 25, 2017 7:04:51 PM org.apache.catalina.core.ApplicationContext log
+INFO: QuartzInitializer: Quartz Scheduler failed to initialize: org.quartz.SchedulerConfigException: Failure occured during job recovery. [See nested exception: org.quartz.JobPersistenceException: Failed to obtain DB connection from data source 'quartz': java.sql.SQLException: Could not retrieve datasource via JNDI url 'java:comp/env/jdbc/spagobi' javax.naming.NameNotFoundException: Name [jdbc/spagobi] is not bound in this Context. Unable to find [jdbc]. [See nested exception: java.sql.SQLException: Could not retrieve datasource via JNDI url 'java:comp/env/jdbc/spagobi' javax.naming.NameNotFoundException: Name [jdbc/spagobi] is not bound in this Context. Unable to find [jdbc].]]
+oct 25, 2017 7:04:51 PM org.apache.catalina.core.StandardContext loadOnStartup
+SEVERE: Servlet [QuartzInitializer] in web application [/SpagoBI] threw load() exception
+java.sql.SQLException: Could not retrieve datasource via JNDI url 'java:comp/env/jdbc/spagobi' javax.naming.NameNotFoundException: Name [jdbc/spagobi] is not bound in this Context. Unable to find [jdbc].
+	at org.quartz.utils.JNDIConnectionProvider.getConnection(JNDIConnectionProvider.java:166)
+	at org.quartz.utils.DBConnectionManager.getConnection(DBConnectionManager.java:112)
+	at org.quartz.impl.jdbcjobstore.JobStoreSupport.getConnection(JobStoreSupport.java:662)
+	at org.quartz.impl.jdbcjobstore.JobStoreTX.getNonManagedTXConnection(JobStoreTX.java:72)
+	at org.quartz.impl.jdbcjobstore.JobStoreSupport.executeInNonManagedTXLock(JobStoreSupport.java:3708)
+	at org.quartz.impl.jdbcjobstore.JobStoreSupport.executeInNonManagedTXLock(JobStoreSupport.java:3673)
+	at org.quartz.impl.jdbcjobstore.JobStoreSupport.cleanVolatileTriggerAndJobs(JobStoreSupport.java:722)
+	at org.quartz.impl.jdbcjobstore.JobStoreSupport.initialize(JobStoreSupport.java:580)
+	at org.quartz.impl.jdbcjobstore.JobStoreTX.initialize(JobStoreTX.java:59)
+	at org.quartz.impl.StdSchedulerFactory.instantiate(StdSchedulerFactory.java:1220)
+	at org.quartz.impl.StdSchedulerFactory.getScheduler(StdSchedulerFactory.java:1371)
+	at org.quartz.ee.servlet.QuartzInitializerServlet.init(QuartzInitializerServlet.java:160)
+	at org.apache.catalina.core.StandardWrapper.initServlet(StandardWrapper.java:1269)
+	at org.apache.catalina.core.StandardWrapper.loadServlet(StandardWrapper.java:1182)
+	at org.apache.catalina.core.StandardWrapper.load(StandardWrapper.java:1072)
+	at org.apache.catalina.core.StandardContext.loadOnStartup(StandardContext.java:5362)
+	at org.apache.catalina.core.StandardContext.startInternal(StandardContext.java:5660)
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:145)
+	at org.apache.catalina.core.StandardContext.reload(StandardContext.java:4134)
+	at org.apache.catalina.loader.WebappLoader.backgroundProcess(WebappLoader.java:425)
+	at org.apache.catalina.core.ContainerBase.backgroundProcess(ContainerBase.java:1470)
+	at org.apache.catalina.core.StandardContext.backgroundProcess(StandardContext.java:5960)
+	at org.apache.catalina.core.ContainerBase$ContainerBackgroundProcessor.processChildren(ContainerBase.java:1671)
+	at org.apache.catalina.core.ContainerBase$ContainerBackgroundProcessor.processChildren(ContainerBase.java:1681)
+	at org.apache.catalina.core.ContainerBase$ContainerBackgroundProcessor.processChildren(ContainerBase.java:1681)
+	at org.apache.catalina.core.ContainerBase$ContainerBackgroundProcessor.run(ContainerBase.java:1649)
+	at java.lang.Thread.run(Unknown Source)
+
+oct 25, 2017 7:07:28 PM org.apache.catalina.core.ApplicationContext log
+INFO: QuartzInitializer: Quartz Initializer Servlet loaded, initializing Scheduler...
+oct 25, 2017 7:07:28 PM org.apache.catalina.core.ApplicationContext log
+INFO: QuartzInitializer: Quartz Scheduler failed to initialize: org.quartz.SchedulerConfigException: Failure occured during job recovery. [See nested exception: org.quartz.JobPersistenceException: Failed to obtain DB connection from data source 'quartz': java.sql.SQLException: Could not retrieve datasource via JNDI url 'java:comp/env/jdbc/spagobi' javax.naming.NameNotFoundException: Name [jdbc/spagobi] is not bound in this Context. Unable to find [jdbc]. [See nested exception: java.sql.SQLException: Could not retrieve datasource via JNDI url 'java:comp/env/jdbc/spagobi' javax.naming.NameNotFoundException: Name [jdbc/spagobi] is not bound in this Context. Unable to find [jdbc].]]
+oct 25, 2017 7:07:28 PM org.apache.catalina.core.StandardContext loadOnStartup
+SEVERE: Servlet [QuartzInitializer] in web application [/SpagoBI] threw load() exception
+java.sql.SQLException: Could not retrieve datasource via JNDI url 'java:comp/env/jdbc/spagobi' javax.naming.NameNotFoundException: Name [jdbc/spagobi] is not bound in this Context. Unable to find [jdbc].
+	at org.quartz.utils.JNDIConnectionProvider.getConnection(JNDIConnectionProvider.java:166)
+	at org.quartz.utils.DBConnectionManager.getConnection(DBConnectionManager.java:112)
+	at org.quartz.impl.jdbcjobstore.JobStoreSupport.getConnection(JobStoreSupport.java:662)
+	at org.quartz.impl.jdbcjobstore.JobStoreTX.getNonManagedTXConnection(JobStoreTX.java:72)
+	at org.quartz.impl.jdbcjobstore.JobStoreSupport.executeInNonManagedTXLock(JobStoreSupport.java:3708)
+	at org.quartz.impl.jdbcjobstore.JobStoreSupport.executeInNonManagedTXLock(JobStoreSupport.java:3673)
+	at org.quartz.impl.jdbcjobstore.JobStoreSupport.cleanVolatileTriggerAndJobs(JobStoreSupport.java:722)
+	at org.quartz.impl.jdbcjobstore.JobStoreSupport.initialize(JobStoreSupport.java:580)
+	at org.quartz.impl.jdbcjobstore.JobStoreTX.initialize(JobStoreTX.java:59)
+	at org.quartz.impl.StdSchedulerFactory.instantiate(StdSchedulerFactory.java:1220)
+	at org.quartz.impl.StdSchedulerFactory.getScheduler(StdSchedulerFactory.java:1371)
+	at org.quartz.ee.servlet.QuartzInitializerServlet.init(QuartzInitializerServlet.java:160)
+	at org.apache.catalina.core.StandardWrapper.initServlet(StandardWrapper.java:1269)
+	at org.apache.catalina.core.StandardWrapper.loadServlet(StandardWrapper.java:1182)
+	at org.apache.catalina.core.StandardWrapper.load(StandardWrapper.java:1072)
+	at org.apache.catalina.core.StandardContext.loadOnStartup(StandardContext.java:5362)
+	at org.apache.catalina.core.StandardContext.startInternal(StandardContext.java:5660)
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:145)
+	at org.apache.catalina.core.ContainerBase.addChildInternal(ContainerBase.java:1015)
+	at org.apache.catalina.core.ContainerBase.addChild(ContainerBase.java:991)
+	at org.apache.catalina.core.StandardHost.addChild(StandardHost.java:652)
+	at org.apache.catalina.startup.HostConfig.deployWAR(HostConfig.java:1127)
+	at org.apache.catalina.startup.HostConfig$DeployWar.run(HostConfig.java:2020)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Unknown Source)
+	at java.util.concurrent.FutureTask.run(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.lang.Thread.run(Unknown Source)
+
+oct 25, 2017 7:11:52 PM org.apache.catalina.core.ApplicationContext log
+INFO: QuartzInitializer: Quartz Initializer Servlet loaded, initializing Scheduler...
+oct 25, 2017 7:11:52 PM org.apache.catalina.core.ApplicationContext log
+INFO: QuartzInitializer: Quartz Scheduler failed to initialize: org.quartz.SchedulerConfigException: Failure occured during job recovery. [See nested exception: org.quartz.JobPersistenceException: Failed to obtain DB connection from data source 'quartz': java.sql.SQLException: Could not retrieve datasource via JNDI url 'java:comp/env/jdbc/spagobi' javax.naming.NameNotFoundException: Name [jdbc/spagobi] is not bound in this Context. Unable to find [jdbc]. [See nested exception: java.sql.SQLException: Could not retrieve datasource via JNDI url 'java:comp/env/jdbc/spagobi' javax.naming.NameNotFoundException: Name [jdbc/spagobi] is not bound in this Context. Unable to find [jdbc].]]
+oct 25, 2017 7:11:52 PM org.apache.catalina.core.StandardContext loadOnStartup
+SEVERE: Servlet [QuartzInitializer] in web application [/SpagoBI] threw load() exception
+java.sql.SQLException: Could not retrieve datasource via JNDI url 'java:comp/env/jdbc/spagobi' javax.naming.NameNotFoundException: Name [jdbc/spagobi] is not bound in this Context. Unable to find [jdbc].
+	at org.quartz.utils.JNDIConnectionProvider.getConnection(JNDIConnectionProvider.java:166)
+	at org.quartz.utils.DBConnectionManager.getConnection(DBConnectionManager.java:112)
+	at org.quartz.impl.jdbcjobstore.JobStoreSupport.getConnection(JobStoreSupport.java:662)
+	at org.quartz.impl.jdbcjobstore.JobStoreTX.getNonManagedTXConnection(JobStoreTX.java:72)
+	at org.quartz.impl.jdbcjobstore.JobStoreSupport.executeInNonManagedTXLock(JobStoreSupport.java:3708)
+	at org.quartz.impl.jdbcjobstore.JobStoreSupport.executeInNonManagedTXLock(JobStoreSupport.java:3673)
+	at org.quartz.impl.jdbcjobstore.JobStoreSupport.cleanVolatileTriggerAndJobs(JobStoreSupport.java:722)
+	at org.quartz.impl.jdbcjobstore.JobStoreSupport.initialize(JobStoreSupport.java:580)
+	at org.quartz.impl.jdbcjobstore.JobStoreTX.initialize(JobStoreTX.java:59)
+	at org.quartz.impl.StdSchedulerFactory.instantiate(StdSchedulerFactory.java:1220)
+	at org.quartz.impl.StdSchedulerFactory.getScheduler(StdSchedulerFactory.java:1371)
+	at org.quartz.ee.servlet.QuartzInitializerServlet.init(QuartzInitializerServlet.java:160)
+	at org.apache.catalina.core.StandardWrapper.initServlet(StandardWrapper.java:1269)
+	at org.apache.catalina.core.StandardWrapper.loadServlet(StandardWrapper.java:1182)
+	at org.apache.catalina.core.StandardWrapper.load(StandardWrapper.java:1072)
+	at org.apache.catalina.core.StandardContext.loadOnStartup(StandardContext.java:5362)
+	at org.apache.catalina.core.StandardContext.startInternal(StandardContext.java:5660)
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:145)
+	at org.apache.catalina.core.ContainerBase.addChildInternal(ContainerBase.java:1015)
+	at org.apache.catalina.core.ContainerBase.addChild(ContainerBase.java:991)
+	at org.apache.catalina.core.StandardHost.addChild(StandardHost.java:652)
+	at org.apache.catalina.startup.HostConfig.deployWAR(HostConfig.java:1127)
+	at org.apache.catalina.startup.HostConfig$DeployWar.run(HostConfig.java:2020)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Unknown Source)
+	at java.util.concurrent.FutureTask.run(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.lang.Thread.run(Unknown Source)
+
+oct 25, 2017 7:11:54 PM org.apache.catalina.core.ApplicationContext log
+INFO: ContextListener: contextInitialized()
+oct 25, 2017 7:11:54 PM org.apache.catalina.core.ApplicationContext log
+INFO: SessionListener: contextInitialized()
+oct 25, 2017 7:11:54 PM org.apache.catalina.core.ApplicationContext log
+INFO: ContextListener: attributeAdded('org.apache.jasper.compiler.TldLocationsCache', 'org.apache.jasper.compiler.TldLocationsCache@3afcedb0')
+oct 25, 2017 7:14:38 PM org.apache.catalina.core.ApplicationContext log
+INFO: QuartzInitializer: Quartz Initializer Servlet loaded, initializing Scheduler...
+oct 25, 2017 7:14:38 PM org.apache.catalina.core.ApplicationContext log
+INFO: QuartzInitializer: Quartz Scheduler failed to initialize: org.quartz.SchedulerConfigException: Failure occured during job recovery. [See nested exception: org.quartz.JobPersistenceException: Failed to obtain DB connection from data source 'quartz': java.sql.SQLException: Could not retrieve datasource via JNDI url 'java:comp/env/jdbc/spagobi' javax.naming.NameNotFoundException: Name [jdbc/spagobi] is not bound in this Context. Unable to find [jdbc]. [See nested exception: java.sql.SQLException: Could not retrieve datasource via JNDI url 'java:comp/env/jdbc/spagobi' javax.naming.NameNotFoundException: Name [jdbc/spagobi] is not bound in this Context. Unable to find [jdbc].]]
+oct 25, 2017 7:14:38 PM org.apache.catalina.core.StandardContext loadOnStartup
+SEVERE: Servlet [QuartzInitializer] in web application [/SpagoBI] threw load() exception
+java.sql.SQLException: Could not retrieve datasource via JNDI url 'java:comp/env/jdbc/spagobi' javax.naming.NameNotFoundException: Name [jdbc/spagobi] is not bound in this Context. Unable to find [jdbc].
+	at org.quartz.utils.JNDIConnectionProvider.getConnection(JNDIConnectionProvider.java:166)
+	at org.quartz.utils.DBConnectionManager.getConnection(DBConnectionManager.java:112)
+	at org.quartz.impl.jdbcjobstore.JobStoreSupport.getConnection(JobStoreSupport.java:662)
+	at org.quartz.impl.jdbcjobstore.JobStoreTX.getNonManagedTXConnection(JobStoreTX.java:72)
+	at org.quartz.impl.jdbcjobstore.JobStoreSupport.executeInNonManagedTXLock(JobStoreSupport.java:3708)
+	at org.quartz.impl.jdbcjobstore.JobStoreSupport.executeInNonManagedTXLock(JobStoreSupport.java:3673)
+	at org.quartz.impl.jdbcjobstore.JobStoreSupport.cleanVolatileTriggerAndJobs(JobStoreSupport.java:722)
+	at org.quartz.impl.jdbcjobstore.JobStoreSupport.initialize(JobStoreSupport.java:580)
+	at org.quartz.impl.jdbcjobstore.JobStoreTX.initialize(JobStoreTX.java:59)
+	at org.quartz.impl.StdSchedulerFactory.instantiate(StdSchedulerFactory.java:1220)
+	at org.quartz.impl.StdSchedulerFactory.getScheduler(StdSchedulerFactory.java:1371)
+	at org.quartz.ee.servlet.QuartzInitializerServlet.init(QuartzInitializerServlet.java:160)
+	at org.apache.catalina.core.StandardWrapper.initServlet(StandardWrapper.java:1269)
+	at org.apache.catalina.core.StandardWrapper.loadServlet(StandardWrapper.java:1182)
+	at org.apache.catalina.core.StandardWrapper.load(StandardWrapper.java:1072)
+	at org.apache.catalina.core.StandardContext.loadOnStartup(StandardContext.java:5362)
+	at org.apache.catalina.core.StandardContext.startInternal(StandardContext.java:5660)
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:145)
+	at org.apache.catalina.core.ContainerBase.addChildInternal(ContainerBase.java:1015)
+	at org.apache.catalina.core.ContainerBase.addChild(ContainerBase.java:991)
+	at org.apache.catalina.core.StandardHost.addChild(StandardHost.java:652)
+	at org.apache.catalina.startup.HostConfig.deployWAR(HostConfig.java:1127)
+	at org.apache.catalina.startup.HostConfig$DeployWar.run(HostConfig.java:2020)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Unknown Source)
+	at java.util.concurrent.FutureTask.run(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.lang.Thread.run(Unknown Source)
+
+oct 25, 2017 7:14:39 PM org.apache.catalina.core.ApplicationContext log
+INFO: ContextListener: contextInitialized()
+oct 25, 2017 7:14:39 PM org.apache.catalina.core.ApplicationContext log
+INFO: SessionListener: contextInitialized()
+oct 25, 2017 7:14:39 PM org.apache.catalina.core.ApplicationContext log
+INFO: ContextListener: attributeAdded('org.apache.jasper.compiler.TldLocationsCache', 'org.apache.jasper.compiler.TldLocationsCache@1396b9ce')
+oct 25, 2017 7:20:44 PM org.apache.catalina.core.ApplicationContext log
+INFO: QuartzInitializer: Quartz Initializer Servlet loaded, initializing Scheduler...
+oct 25, 2017 7:20:44 PM org.apache.catalina.core.ApplicationContext log
+INFO: QuartzInitializer: Quartz Scheduler failed to initialize: org.quartz.SchedulerConfigException: Failure occured during job recovery. [See nested exception: org.quartz.JobPersistenceException: Failed to obtain DB connection from data source 'quartz': java.sql.SQLException: Could not retrieve datasource via JNDI url 'java:comp/env/jdbc/spagobi' javax.naming.NameNotFoundException: Name [jdbc/spagobi] is not bound in this Context. Unable to find [jdbc]. [See nested exception: java.sql.SQLException: Could not retrieve datasource via JNDI url 'java:comp/env/jdbc/spagobi' javax.naming.NameNotFoundException: Name [jdbc/spagobi] is not bound in this Context. Unable to find [jdbc].]]
+oct 25, 2017 7:20:44 PM org.apache.catalina.core.StandardContext loadOnStartup
+SEVERE: Servlet [QuartzInitializer] in web application [/SpagoBI] threw load() exception
+java.sql.SQLException: Could not retrieve datasource via JNDI url 'java:comp/env/jdbc/spagobi' javax.naming.NameNotFoundException: Name [jdbc/spagobi] is not bound in this Context. Unable to find [jdbc].
+	at org.quartz.utils.JNDIConnectionProvider.getConnection(JNDIConnectionProvider.java:166)
+	at org.quartz.utils.DBConnectionManager.getConnection(DBConnectionManager.java:112)
+	at org.quartz.impl.jdbcjobstore.JobStoreSupport.getConnection(JobStoreSupport.java:662)
+	at org.quartz.impl.jdbcjobstore.JobStoreTX.getNonManagedTXConnection(JobStoreTX.java:72)
+	at org.quartz.impl.jdbcjobstore.JobStoreSupport.executeInNonManagedTXLock(JobStoreSupport.java:3708)
+	at org.quartz.impl.jdbcjobstore.JobStoreSupport.executeInNonManagedTXLock(JobStoreSupport.java:3673)
+	at org.quartz.impl.jdbcjobstore.JobStoreSupport.cleanVolatileTriggerAndJobs(JobStoreSupport.java:722)
+	at org.quartz.impl.jdbcjobstore.JobStoreSupport.initialize(JobStoreSupport.java:580)
+	at org.quartz.impl.jdbcjobstore.JobStoreTX.initialize(JobStoreTX.java:59)
+	at org.quartz.impl.StdSchedulerFactory.instantiate(StdSchedulerFactory.java:1220)
+	at org.quartz.impl.StdSchedulerFactory.getScheduler(StdSchedulerFactory.java:1371)
+	at org.quartz.ee.servlet.QuartzInitializerServlet.init(QuartzInitializerServlet.java:160)
+	at org.apache.catalina.core.StandardWrapper.initServlet(StandardWrapper.java:1269)
+	at org.apache.catalina.core.StandardWrapper.loadServlet(StandardWrapper.java:1182)
+	at org.apache.catalina.core.StandardWrapper.load(StandardWrapper.java:1072)
+	at org.apache.catalina.core.StandardContext.loadOnStartup(StandardContext.java:5362)
+	at org.apache.catalina.core.StandardContext.startInternal(StandardContext.java:5660)
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:145)
+	at org.apache.catalina.core.ContainerBase.addChildInternal(ContainerBase.java:1015)
+	at org.apache.catalina.core.ContainerBase.addChild(ContainerBase.java:991)
+	at org.apache.catalina.core.StandardHost.addChild(StandardHost.java:652)
+	at org.apache.catalina.startup.HostConfig.deployWAR(HostConfig.java:1127)
+	at org.apache.catalina.startup.HostConfig$DeployWar.run(HostConfig.java:2020)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+
+oct 25, 2017 7:20:45 PM org.apache.catalina.core.ApplicationContext log
+INFO: ContextListener: contextInitialized()
+oct 25, 2017 7:20:45 PM org.apache.catalina.core.ApplicationContext log
+INFO: SessionListener: contextInitialized()
+oct 25, 2017 7:20:45 PM org.apache.catalina.core.ApplicationContext log
+INFO: ContextListener: attributeAdded('org.apache.jasper.compiler.TldLocationsCache', 'org.apache.jasper.compiler.TldLocationsCache@e42e378')
+oct 25, 2017 7:22:32 PM org.apache.catalina.core.ApplicationContext log
+INFO: ContextListener: contextInitialized()
+oct 25, 2017 7:22:32 PM org.apache.catalina.core.ApplicationContext log
+INFO: SessionListener: contextInitialized()
+oct 25, 2017 7:22:32 PM org.apache.catalina.core.ApplicationContext log
+INFO: ContextListener: attributeAdded('org.apache.jasper.compiler.TldLocationsCache', 'org.apache.jasper.compiler.TldLocationsCache@724b88b1')
+oct 25, 2017 7:22:51 PM org.apache.catalina.core.ApplicationContext log
+INFO: QuartzInitializer: Quartz Initializer Servlet loaded, initializing Scheduler...
+oct 25, 2017 7:22:51 PM org.apache.catalina.core.ApplicationContext log
+INFO: QuartzInitializer: Quartz Scheduler failed to initialize: org.quartz.SchedulerConfigException: Failure occured during job recovery. [See nested exception: org.quartz.JobPersistenceException: Failed to obtain DB connection from data source 'quartz': java.sql.SQLException: Could not retrieve datasource via JNDI url 'java:comp/env/jdbc/spagobi' javax.naming.NameNotFoundException: Name [jdbc/spagobi] is not bound in this Context. Unable to find [jdbc]. [See nested exception: java.sql.SQLException: Could not retrieve datasource via JNDI url 'java:comp/env/jdbc/spagobi' javax.naming.NameNotFoundException: Name [jdbc/spagobi] is not bound in this Context. Unable to find [jdbc].]]
+oct 25, 2017 7:22:51 PM org.apache.catalina.core.StandardContext loadOnStartup
+SEVERE: Servlet [QuartzInitializer] in web application [/SpagoBI] threw load() exception
+java.sql.SQLException: Could not retrieve datasource via JNDI url 'java:comp/env/jdbc/spagobi' javax.naming.NameNotFoundException: Name [jdbc/spagobi] is not bound in this Context. Unable to find [jdbc].
+	at org.quartz.utils.JNDIConnectionProvider.getConnection(JNDIConnectionProvider.java:166)
+	at org.quartz.utils.DBConnectionManager.getConnection(DBConnectionManager.java:112)
+	at org.quartz.impl.jdbcjobstore.JobStoreSupport.getConnection(JobStoreSupport.java:662)
+	at org.quartz.impl.jdbcjobstore.JobStoreTX.getNonManagedTXConnection(JobStoreTX.java:72)
+	at org.quartz.impl.jdbcjobstore.JobStoreSupport.executeInNonManagedTXLock(JobStoreSupport.java:3708)
+	at org.quartz.impl.jdbcjobstore.JobStoreSupport.executeInNonManagedTXLock(JobStoreSupport.java:3673)
+	at org.quartz.impl.jdbcjobstore.JobStoreSupport.cleanVolatileTriggerAndJobs(JobStoreSupport.java:722)
+	at org.quartz.impl.jdbcjobstore.JobStoreSupport.initialize(JobStoreSupport.java:580)
+	at org.quartz.impl.jdbcjobstore.JobStoreTX.initialize(JobStoreTX.java:59)
+	at org.quartz.impl.StdSchedulerFactory.instantiate(StdSchedulerFactory.java:1220)
+	at org.quartz.impl.StdSchedulerFactory.getScheduler(StdSchedulerFactory.java:1371)
+	at org.quartz.ee.servlet.QuartzInitializerServlet.init(QuartzInitializerServlet.java:160)
+	at org.apache.catalina.core.StandardWrapper.initServlet(StandardWrapper.java:1269)
+	at org.apache.catalina.core.StandardWrapper.loadServlet(StandardWrapper.java:1182)
+	at org.apache.catalina.core.StandardWrapper.load(StandardWrapper.java:1072)
+	at org.apache.catalina.core.StandardContext.loadOnStartup(StandardContext.java:5362)
+	at org.apache.catalina.core.StandardContext.startInternal(StandardContext.java:5660)
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:145)
+	at org.apache.catalina.core.ContainerBase.addChildInternal(ContainerBase.java:1015)
+	at org.apache.catalina.core.ContainerBase.addChild(ContainerBase.java:991)
+	at org.apache.catalina.core.StandardHost.addChild(StandardHost.java:652)
+	at org.apache.catalina.startup.HostConfig.deployDirectory(HostConfig.java:1296)
+	at org.apache.catalina.startup.HostConfig$DeployDirectory.run(HostConfig.java:2038)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+
+oct 25, 2017 7:29:27 PM org.apache.catalina.core.ApplicationContext log
+INFO: ContextListener: contextInitialized()
+oct 25, 2017 7:29:27 PM org.apache.catalina.core.ApplicationContext log
+INFO: SessionListener: contextInitialized()
+oct 25, 2017 7:29:27 PM org.apache.catalina.core.ApplicationContext log
+INFO: ContextListener: attributeAdded('org.apache.jasper.compiler.TldLocationsCache', 'org.apache.jasper.compiler.TldLocationsCache@724b88b1')
+oct 25, 2017 7:29:47 PM org.apache.catalina.core.ApplicationContext log
+INFO: QuartzInitializer: Quartz Initializer Servlet loaded, initializing Scheduler...
+oct 25, 2017 7:29:47 PM org.apache.catalina.core.ApplicationContext log
+INFO: QuartzInitializer: Quartz Scheduler failed to initialize: org.quartz.SchedulerConfigException: Failure occured during job recovery. [See nested exception: org.quartz.JobPersistenceException: Failed to obtain DB connection from data source 'quartz': java.sql.SQLException: Could not retrieve datasource via JNDI url 'java:comp/env/jdbc/spagobi' javax.naming.NameNotFoundException: Name [jdbc/spagobi] is not bound in this Context. Unable to find [jdbc]. [See nested exception: java.sql.SQLException: Could not retrieve datasource via JNDI url 'java:comp/env/jdbc/spagobi' javax.naming.NameNotFoundException: Name [jdbc/spagobi] is not bound in this Context. Unable to find [jdbc].]]
+oct 25, 2017 7:29:47 PM org.apache.catalina.core.StandardContext loadOnStartup
+SEVERE: Servlet [QuartzInitializer] in web application [/SpagoBI] threw load() exception
+java.sql.SQLException: Could not retrieve datasource via JNDI url 'java:comp/env/jdbc/spagobi' javax.naming.NameNotFoundException: Name [jdbc/spagobi] is not bound in this Context. Unable to find [jdbc].
+	at org.quartz.utils.JNDIConnectionProvider.getConnection(JNDIConnectionProvider.java:166)
+	at org.quartz.utils.DBConnectionManager.getConnection(DBConnectionManager.java:112)
+	at org.quartz.impl.jdbcjobstore.JobStoreSupport.getConnection(JobStoreSupport.java:662)
+	at org.quartz.impl.jdbcjobstore.JobStoreTX.getNonManagedTXConnection(JobStoreTX.java:72)
+	at org.quartz.impl.jdbcjobstore.JobStoreSupport.executeInNonManagedTXLock(JobStoreSupport.java:3708)
+	at org.quartz.impl.jdbcjobstore.JobStoreSupport.executeInNonManagedTXLock(JobStoreSupport.java:3673)
+	at org.quartz.impl.jdbcjobstore.JobStoreSupport.cleanVolatileTriggerAndJobs(JobStoreSupport.java:722)
+	at org.quartz.impl.jdbcjobstore.JobStoreSupport.initialize(JobStoreSupport.java:580)
+	at org.quartz.impl.jdbcjobstore.JobStoreTX.initialize(JobStoreTX.java:59)
+	at org.quartz.impl.StdSchedulerFactory.instantiate(StdSchedulerFactory.java:1220)
+	at org.quartz.impl.StdSchedulerFactory.getScheduler(StdSchedulerFactory.java:1371)
+	at org.quartz.ee.servlet.QuartzInitializerServlet.init(QuartzInitializerServlet.java:160)
+	at org.apache.catalina.core.StandardWrapper.initServlet(StandardWrapper.java:1269)
+	at org.apache.catalina.core.StandardWrapper.loadServlet(StandardWrapper.java:1182)
+	at org.apache.catalina.core.StandardWrapper.load(StandardWrapper.java:1072)
+	at org.apache.catalina.core.StandardContext.loadOnStartup(StandardContext.java:5362)
+	at org.apache.catalina.core.StandardContext.startInternal(StandardContext.java:5660)
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:145)
+	at org.apache.catalina.core.ContainerBase.addChildInternal(ContainerBase.java:1015)
+	at org.apache.catalina.core.ContainerBase.addChild(ContainerBase.java:991)
+	at org.apache.catalina.core.StandardHost.addChild(StandardHost.java:652)
+	at org.apache.catalina.startup.HostConfig.deployDirectory(HostConfig.java:1296)
+	at org.apache.catalina.startup.HostConfig$DeployDirectory.run(HostConfig.java:2038)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+
+oct 25, 2017 7:40:15 PM org.apache.catalina.core.ApplicationContext log
+INFO: ContextListener: contextInitialized()
+oct 25, 2017 7:40:15 PM org.apache.catalina.core.ApplicationContext log
+INFO: SessionListener: contextInitialized()
+oct 25, 2017 7:40:15 PM org.apache.catalina.core.ApplicationContext log
+INFO: ContextListener: attributeAdded('org.apache.jasper.compiler.TldLocationsCache', 'org.apache.jasper.compiler.TldLocationsCache@f137622')
+oct 25, 2017 7:40:35 PM org.apache.catalina.core.ApplicationContext log
+INFO: QuartzInitializer: Quartz Initializer Servlet loaded, initializing Scheduler...
+oct 25, 2017 7:40:35 PM org.apache.catalina.core.ApplicationContext log
+INFO: QuartzInitializer: Quartz Scheduler failed to initialize: org.quartz.SchedulerConfigException: Failure occured during job recovery. [See nested exception: org.quartz.JobPersistenceException: Failed to obtain DB connection from data source 'quartz': java.sql.SQLException: Could not retrieve datasource via JNDI url 'java:comp/env/jdbc/spagobi' javax.naming.NameNotFoundException: Name [jdbc/spagobi] is not bound in this Context. Unable to find [jdbc]. [See nested exception: java.sql.SQLException: Could not retrieve datasource via JNDI url 'java:comp/env/jdbc/spagobi' javax.naming.NameNotFoundException: Name [jdbc/spagobi] is not bound in this Context. Unable to find [jdbc].]]
+oct 25, 2017 7:40:35 PM org.apache.catalina.core.StandardContext loadOnStartup
+SEVERE: Servlet [QuartzInitializer] in web application [/SpagoBI] threw load() exception
+java.sql.SQLException: Could not retrieve datasource via JNDI url 'java:comp/env/jdbc/spagobi' javax.naming.NameNotFoundException: Name [jdbc/spagobi] is not bound in this Context. Unable to find [jdbc].
+	at org.quartz.utils.JNDIConnectionProvider.getConnection(JNDIConnectionProvider.java:166)
+	at org.quartz.utils.DBConnectionManager.getConnection(DBConnectionManager.java:112)
+	at org.quartz.impl.jdbcjobstore.JobStoreSupport.getConnection(JobStoreSupport.java:662)
+	at org.quartz.impl.jdbcjobstore.JobStoreTX.getNonManagedTXConnection(JobStoreTX.java:72)
+	at org.quartz.impl.jdbcjobstore.JobStoreSupport.executeInNonManagedTXLock(JobStoreSupport.java:3708)
+	at org.quartz.impl.jdbcjobstore.JobStoreSupport.executeInNonManagedTXLock(JobStoreSupport.java:3673)
+	at org.quartz.impl.jdbcjobstore.JobStoreSupport.cleanVolatileTriggerAndJobs(JobStoreSupport.java:722)
+	at org.quartz.impl.jdbcjobstore.JobStoreSupport.initialize(JobStoreSupport.java:580)
+	at org.quartz.impl.jdbcjobstore.JobStoreTX.initialize(JobStoreTX.java:59)
+	at org.quartz.impl.StdSchedulerFactory.instantiate(StdSchedulerFactory.java:1220)
+	at org.quartz.impl.StdSchedulerFactory.getScheduler(StdSchedulerFactory.java:1371)
+	at org.quartz.ee.servlet.QuartzInitializerServlet.init(QuartzInitializerServlet.java:160)
+	at org.apache.catalina.core.StandardWrapper.initServlet(StandardWrapper.java:1269)
+	at org.apache.catalina.core.StandardWrapper.loadServlet(StandardWrapper.java:1182)
+	at org.apache.catalina.core.StandardWrapper.load(StandardWrapper.java:1072)
+	at org.apache.catalina.core.StandardContext.loadOnStartup(StandardContext.java:5362)
+	at org.apache.catalina.core.StandardContext.startInternal(StandardContext.java:5660)
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:145)
+	at org.apache.catalina.core.ContainerBase.addChildInternal(ContainerBase.java:1015)
+	at org.apache.catalina.core.ContainerBase.addChild(ContainerBase.java:991)
+	at org.apache.catalina.core.StandardHost.addChild(StandardHost.java:652)
+	at org.apache.catalina.startup.HostConfig.deployDirectory(HostConfig.java:1296)
+	at org.apache.catalina.startup.HostConfig$DeployDirectory.run(HostConfig.java:2038)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+
+oct 25, 2017 7:52:54 PM org.apache.catalina.core.ApplicationContext log
+INFO: ContextListener: contextInitialized()
+oct 25, 2017 7:52:54 PM org.apache.catalina.core.ApplicationContext log
+INFO: SessionListener: contextInitialized()
+oct 25, 2017 7:52:54 PM org.apache.catalina.core.ApplicationContext log
+INFO: ContextListener: attributeAdded('org.apache.jasper.compiler.TldLocationsCache', 'org.apache.jasper.compiler.TldLocationsCache@f137622')
+oct 25, 2017 7:53:14 PM org.apache.catalina.core.ApplicationContext log
+INFO: QuartzInitializer: Quartz Initializer Servlet loaded, initializing Scheduler...
+oct 25, 2017 7:53:14 PM org.apache.catalina.core.ApplicationContext log
+INFO: QuartzInitializer: Quartz Scheduler failed to initialize: org.quartz.SchedulerConfigException: Failure occured during job recovery. [See nested exception: org.quartz.JobPersistenceException: Failed to obtain DB connection from data source 'quartz': java.sql.SQLException: Could not retrieve datasource via JNDI url 'java:comp/env/jdbc/spagobi' javax.naming.NameNotFoundException: Name [jdbc/spagobi] is not bound in this Context. Unable to find [jdbc]. [See nested exception: java.sql.SQLException: Could not retrieve datasource via JNDI url 'java:comp/env/jdbc/spagobi' javax.naming.NameNotFoundException: Name [jdbc/spagobi] is not bound in this Context. Unable to find [jdbc].]]
+oct 25, 2017 7:53:14 PM org.apache.catalina.core.StandardContext loadOnStartup
+SEVERE: Servlet [QuartzInitializer] in web application [/SpagoBI] threw load() exception
+java.sql.SQLException: Could not retrieve datasource via JNDI url 'java:comp/env/jdbc/spagobi' javax.naming.NameNotFoundException: Name [jdbc/spagobi] is not bound in this Context. Unable to find [jdbc].
+	at org.quartz.utils.JNDIConnectionProvider.getConnection(JNDIConnectionProvider.java:166)
+	at org.quartz.utils.DBConnectionManager.getConnection(DBConnectionManager.java:112)
+	at org.quartz.impl.jdbcjobstore.JobStoreSupport.getConnection(JobStoreSupport.java:662)
+	at org.quartz.impl.jdbcjobstore.JobStoreTX.getNonManagedTXConnection(JobStoreTX.java:72)
+	at org.quartz.impl.jdbcjobstore.JobStoreSupport.executeInNonManagedTXLock(JobStoreSupport.java:3708)
+	at org.quartz.impl.jdbcjobstore.JobStoreSupport.executeInNonManagedTXLock(JobStoreSupport.java:3673)
+	at org.quartz.impl.jdbcjobstore.JobStoreSupport.cleanVolatileTriggerAndJobs(JobStoreSupport.java:722)
+	at org.quartz.impl.jdbcjobstore.JobStoreSupport.initialize(JobStoreSupport.java:580)
+	at org.quartz.impl.jdbcjobstore.JobStoreTX.initialize(JobStoreTX.java:59)
+	at org.quartz.impl.StdSchedulerFactory.instantiate(StdSchedulerFactory.java:1220)
+	at org.quartz.impl.StdSchedulerFactory.getScheduler(StdSchedulerFactory.java:1371)
+	at org.quartz.ee.servlet.QuartzInitializerServlet.init(QuartzInitializerServlet.java:160)
+	at org.apache.catalina.core.StandardWrapper.initServlet(StandardWrapper.java:1269)
+	at org.apache.catalina.core.StandardWrapper.loadServlet(StandardWrapper.java:1182)
+	at org.apache.catalina.core.StandardWrapper.load(StandardWrapper.java:1072)
+	at org.apache.catalina.core.StandardContext.loadOnStartup(StandardContext.java:5362)
+	at org.apache.catalina.core.StandardContext.startInternal(StandardContext.java:5660)
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:145)
+	at org.apache.catalina.core.ContainerBase.addChildInternal(ContainerBase.java:1015)
+	at org.apache.catalina.core.ContainerBase.addChild(ContainerBase.java:991)
+	at org.apache.catalina.core.StandardHost.addChild(StandardHost.java:652)
+	at org.apache.catalina.startup.HostConfig.deployDirectory(HostConfig.java:1296)
+	at org.apache.catalina.startup.HostConfig$DeployDirectory.run(HostConfig.java:2038)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+
+oct 25, 2017 8:30:12 PM org.apache.catalina.core.ApplicationContext log
+INFO: ContextListener: contextInitialized()
+oct 25, 2017 8:30:12 PM org.apache.catalina.core.ApplicationContext log
+INFO: SessionListener: contextInitialized()
+oct 25, 2017 8:30:12 PM org.apache.catalina.core.ApplicationContext log
+INFO: ContextListener: attributeAdded('org.apache.jasper.compiler.TldLocationsCache', 'org.apache.jasper.compiler.TldLocationsCache@304731fb')
+oct 25, 2017 8:30:44 PM org.apache.catalina.core.ApplicationContext log
+INFO: QuartzInitializer: Quartz Initializer Servlet loaded, initializing Scheduler...
+oct 25, 2017 8:30:44 PM org.apache.catalina.core.ApplicationContext log
+INFO: QuartzInitializer: Quartz Scheduler failed to initialize: org.quartz.SchedulerConfigException: Failure occured during job recovery. [See nested exception: org.quartz.JobPersistenceException: Failed to obtain DB connection from data source 'quartz': java.sql.SQLException: Could not retrieve datasource via JNDI url 'java:comp/env/jdbc/spagobi' javax.naming.NameNotFoundException: Name [jdbc/spagobi] is not bound in this Context. Unable to find [jdbc]. [See nested exception: java.sql.SQLException: Could not retrieve datasource via JNDI url 'java:comp/env/jdbc/spagobi' javax.naming.NameNotFoundException: Name [jdbc/spagobi] is not bound in this Context. Unable to find [jdbc].]]
+oct 25, 2017 8:30:44 PM org.apache.catalina.core.StandardContext loadOnStartup
+SEVERE: Servlet [QuartzInitializer] in web application [/SpagoBI] threw load() exception
+java.sql.SQLException: Could not retrieve datasource via JNDI url 'java:comp/env/jdbc/spagobi' javax.naming.NameNotFoundException: Name [jdbc/spagobi] is not bound in this Context. Unable to find [jdbc].
+	at org.quartz.utils.JNDIConnectionProvider.getConnection(JNDIConnectionProvider.java:166)
+	at org.quartz.utils.DBConnectionManager.getConnection(DBConnectionManager.java:112)
+	at org.quartz.impl.jdbcjobstore.JobStoreSupport.getConnection(JobStoreSupport.java:662)
+	at org.quartz.impl.jdbcjobstore.JobStoreTX.getNonManagedTXConnection(JobStoreTX.java:72)
+	at org.quartz.impl.jdbcjobstore.JobStoreSupport.executeInNonManagedTXLock(JobStoreSupport.java:3708)
+	at org.quartz.impl.jdbcjobstore.JobStoreSupport.executeInNonManagedTXLock(JobStoreSupport.java:3673)
+	at org.quartz.impl.jdbcjobstore.JobStoreSupport.cleanVolatileTriggerAndJobs(JobStoreSupport.java:722)
+	at org.quartz.impl.jdbcjobstore.JobStoreSupport.initialize(JobStoreSupport.java:580)
+	at org.quartz.impl.jdbcjobstore.JobStoreTX.initialize(JobStoreTX.java:59)
+	at org.quartz.impl.StdSchedulerFactory.instantiate(StdSchedulerFactory.java:1220)
+	at org.quartz.impl.StdSchedulerFactory.getScheduler(StdSchedulerFactory.java:1371)
+	at org.quartz.ee.servlet.QuartzInitializerServlet.init(QuartzInitializerServlet.java:160)
+	at org.apache.catalina.core.StandardWrapper.initServlet(StandardWrapper.java:1269)
+	at org.apache.catalina.core.StandardWrapper.loadServlet(StandardWrapper.java:1182)
+	at org.apache.catalina.core.StandardWrapper.load(StandardWrapper.java:1072)
+	at org.apache.catalina.core.StandardContext.loadOnStartup(StandardContext.java:5362)
+	at org.apache.catalina.core.StandardContext.startInternal(StandardContext.java:5660)
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:145)
+	at org.apache.catalina.core.ContainerBase.addChildInternal(ContainerBase.java:1015)
+	at org.apache.catalina.core.ContainerBase.addChild(ContainerBase.java:991)
+	at org.apache.catalina.core.StandardHost.addChild(StandardHost.java:652)
+	at org.apache.catalina.startup.HostConfig.deployDirectory(HostConfig.java:1296)
+	at org.apache.catalina.startup.HostConfig$DeployDirectory.run(HostConfig.java:2038)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+
+oct 25, 2017 8:37:43 PM org.apache.catalina.core.ApplicationContext log
+INFO: ContextListener: contextInitialized()
+oct 25, 2017 8:37:43 PM org.apache.catalina.core.ApplicationContext log
+INFO: SessionListener: contextInitialized()
+oct 25, 2017 8:37:43 PM org.apache.catalina.core.ApplicationContext log
+INFO: ContextListener: attributeAdded('org.apache.jasper.compiler.TldLocationsCache', 'org.apache.jasper.compiler.TldLocationsCache@5c8d9632')
+oct 25, 2017 8:38:01 PM org.apache.catalina.core.ApplicationContext log
+INFO: QuartzInitializer: Quartz Initializer Servlet loaded, initializing Scheduler...
+oct 25, 2017 8:38:01 PM org.apache.catalina.core.ApplicationContext log
+INFO: QuartzInitializer: Quartz Scheduler failed to initialize: org.quartz.SchedulerConfigException: Failure occured during job recovery. [See nested exception: org.quartz.JobPersistenceException: Failed to obtain DB connection from data source 'quartz': java.sql.SQLException: Could not retrieve datasource via JNDI url 'java:comp/env/jdbc/spagobi' javax.naming.NameNotFoundException: Name [jdbc/spagobi] is not bound in this Context. Unable to find [jdbc]. [See nested exception: java.sql.SQLException: Could not retrieve datasource via JNDI url 'java:comp/env/jdbc/spagobi' javax.naming.NameNotFoundException: Name [jdbc/spagobi] is not bound in this Context. Unable to find [jdbc].]]
+oct 25, 2017 8:38:01 PM org.apache.catalina.core.StandardContext loadOnStartup
+SEVERE: Servlet [QuartzInitializer] in web application [/SpagoBI] threw load() exception
+java.sql.SQLException: Could not retrieve datasource via JNDI url 'java:comp/env/jdbc/spagobi' javax.naming.NameNotFoundException: Name [jdbc/spagobi] is not bound in this Context. Unable to find [jdbc].
+	at org.quartz.utils.JNDIConnectionProvider.getConnection(JNDIConnectionProvider.java:166)
+	at org.quartz.utils.DBConnectionManager.getConnection(DBConnectionManager.java:112)
+	at org.quartz.impl.jdbcjobstore.JobStoreSupport.getConnection(JobStoreSupport.java:662)
+	at org.quartz.impl.jdbcjobstore.JobStoreTX.getNonManagedTXConnection(JobStoreTX.java:72)
+	at org.quartz.impl.jdbcjobstore.JobStoreSupport.executeInNonManagedTXLock(JobStoreSupport.java:3708)
+	at org.quartz.impl.jdbcjobstore.JobStoreSupport.executeInNonManagedTXLock(JobStoreSupport.java:3673)
+	at org.quartz.impl.jdbcjobstore.JobStoreSupport.cleanVolatileTriggerAndJobs(JobStoreSupport.java:722)
+	at org.quartz.impl.jdbcjobstore.JobStoreSupport.initialize(JobStoreSupport.java:580)
+	at org.quartz.impl.jdbcjobstore.JobStoreTX.initialize(JobStoreTX.java:59)
+	at org.quartz.impl.StdSchedulerFactory.instantiate(StdSchedulerFactory.java:1220)
+	at org.quartz.impl.StdSchedulerFactory.getScheduler(StdSchedulerFactory.java:1371)
+	at org.quartz.ee.servlet.QuartzInitializerServlet.init(QuartzInitializerServlet.java:160)
+	at org.apache.catalina.core.StandardWrapper.initServlet(StandardWrapper.java:1269)
+	at org.apache.catalina.core.StandardWrapper.loadServlet(StandardWrapper.java:1182)
+	at org.apache.catalina.core.StandardWrapper.load(StandardWrapper.java:1072)
+	at org.apache.catalina.core.StandardContext.loadOnStartup(StandardContext.java:5362)
+	at org.apache.catalina.core.StandardContext.startInternal(StandardContext.java:5660)
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:145)
+	at org.apache.catalina.core.ContainerBase.addChildInternal(ContainerBase.java:1015)
+	at org.apache.catalina.core.ContainerBase.addChild(ContainerBase.java:991)
+	at org.apache.catalina.core.StandardHost.addChild(StandardHost.java:652)
+	at org.apache.catalina.startup.HostConfig.deployDirectory(HostConfig.java:1296)
+	at org.apache.catalina.startup.HostConfig$DeployDirectory.run(HostConfig.java:2038)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+
+oct 25, 2017 8:58:27 PM org.apache.catalina.core.ApplicationContext log
+INFO: ContextListener: contextInitialized()
+oct 25, 2017 8:58:27 PM org.apache.catalina.core.ApplicationContext log
+INFO: SessionListener: contextInitialized()
+oct 25, 2017 8:58:27 PM org.apache.catalina.core.ApplicationContext log
+INFO: ContextListener: attributeAdded('org.apache.jasper.compiler.TldLocationsCache', 'org.apache.jasper.compiler.TldLocationsCache@15249b96')
+oct 25, 2017 8:58:52 PM org.apache.catalina.core.ApplicationContext log
+INFO: QuartzInitializer: Quartz Initializer Servlet loaded, initializing Scheduler...
+oct 25, 2017 8:58:52 PM org.apache.catalina.core.ApplicationContext log
+INFO: QuartzInitializer: Quartz Scheduler failed to initialize: org.quartz.SchedulerConfigException: Failure occured during job recovery. [See nested exception: org.quartz.JobPersistenceException: Failed to obtain DB connection from data source 'quartz': java.sql.SQLException: Could not retrieve datasource via JNDI url 'java:comp/env/jdbc/spagobi' javax.naming.NameNotFoundException: Name [jdbc/spagobi] is not bound in this Context. Unable to find [jdbc]. [See nested exception: java.sql.SQLException: Could not retrieve datasource via JNDI url 'java:comp/env/jdbc/spagobi' javax.naming.NameNotFoundException: Name [jdbc/spagobi] is not bound in this Context. Unable to find [jdbc].]]
+oct 25, 2017 8:58:52 PM org.apache.catalina.core.StandardContext loadOnStartup
+SEVERE: Servlet [QuartzInitializer] in web application [/SpagoBI] threw load() exception
+java.sql.SQLException: Could not retrieve datasource via JNDI url 'java:comp/env/jdbc/spagobi' javax.naming.NameNotFoundException: Name [jdbc/spagobi] is not bound in this Context. Unable to find [jdbc].
+	at org.quartz.utils.JNDIConnectionProvider.getConnection(JNDIConnectionProvider.java:166)
+	at org.quartz.utils.DBConnectionManager.getConnection(DBConnectionManager.java:112)
+	at org.quartz.impl.jdbcjobstore.JobStoreSupport.getConnection(JobStoreSupport.java:662)
+	at org.quartz.impl.jdbcjobstore.JobStoreTX.getNonManagedTXConnection(JobStoreTX.java:72)
+	at org.quartz.impl.jdbcjobstore.JobStoreSupport.executeInNonManagedTXLock(JobStoreSupport.java:3708)
+	at org.quartz.impl.jdbcjobstore.JobStoreSupport.executeInNonManagedTXLock(JobStoreSupport.java:3673)
+	at org.quartz.impl.jdbcjobstore.JobStoreSupport.cleanVolatileTriggerAndJobs(JobStoreSupport.java:722)
+	at org.quartz.impl.jdbcjobstore.JobStoreSupport.initialize(JobStoreSupport.java:580)
+	at org.quartz.impl.jdbcjobstore.JobStoreTX.initialize(JobStoreTX.java:59)
+	at org.quartz.impl.StdSchedulerFactory.instantiate(StdSchedulerFactory.java:1220)
+	at org.quartz.impl.StdSchedulerFactory.getScheduler(StdSchedulerFactory.java:1371)
+	at org.quartz.ee.servlet.QuartzInitializerServlet.init(QuartzInitializerServlet.java:160)
+	at org.apache.catalina.core.StandardWrapper.initServlet(StandardWrapper.java:1269)
+	at org.apache.catalina.core.StandardWrapper.loadServlet(StandardWrapper.java:1182)
+	at org.apache.catalina.core.StandardWrapper.load(StandardWrapper.java:1072)
+	at org.apache.catalina.core.StandardContext.loadOnStartup(StandardContext.java:5362)
+	at org.apache.catalina.core.StandardContext.startInternal(StandardContext.java:5660)
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:145)
+	at org.apache.catalina.core.ContainerBase.addChildInternal(ContainerBase.java:1015)
+	at org.apache.catalina.core.ContainerBase.addChild(ContainerBase.java:991)
+	at org.apache.catalina.core.StandardHost.addChild(StandardHost.java:652)
+	at org.apache.catalina.startup.HostConfig.deployDirectory(HostConfig.java:1296)
+	at org.apache.catalina.startup.HostConfig$DeployDirectory.run(HostConfig.java:2038)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+

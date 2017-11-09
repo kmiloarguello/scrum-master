@@ -163,9 +163,13 @@ Prima la comunicación con el cliente sobre cualquier cosa.
 
 El Product Owner PRIORIZA las actividades. 
 ¿Qué quiere el cliente ver primero?
-Requerimientos Primarios
+Requerimientos Primarios.
 
-
+En SCRUM Todos somos iguales frente al empoderamiento que tenemos.
+Por ejemplo. 
+Resaltar tanto lo bueno como lo malo.
+¿Que hice bien? 
+¿Que hice mal?
 
 
 
