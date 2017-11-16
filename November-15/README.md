@@ -79,6 +79,19 @@ SPRINT BACKLOG
 - Definicion de actividades y requerimientos con prioridad.
 
 ## Roles de trabajo
+Definir roles y responsabilidades.
+Cada persona debe conocer sus responsabilidades.
+Los SCRUM Master deben conocer a detalle las responsabiliades del equipo.
+
+**SCRUM TEAM**
+1. Product Owner.
+- Conoce el proyecto. representante del cliente. conoce del negocio.
+2. SCRUM Master
+- Facilitador entre el equipo y el Product Owner. 
+3. Sevelopment Team
+- Todos los integrantes del equipo SCRUM.
+- Maximo 9 y minimo 3.
+- Si son mas personas se parte el equipo.
 
 
 
